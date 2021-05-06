@@ -2,7 +2,7 @@
 
 #ans to ques no 1
 # echo "enter how many numbers you want to enter"
-#took input from user
+# took input from user
 # read a
 # echo "now plz enter $a numbers"
 
@@ -38,7 +38,6 @@ fun_arg()
     string=$1
     len=${#string}
     i=0
-
 #------here we split the string into array-----
     while (( $string>0 ))
     do
@@ -47,7 +46,6 @@ fun_arg()
         b[$i]=$a
         ((i++))
     done
-
 #-------here we sort the array according to decending order---------
     for ((i=0;i<$len;i++))
     do
@@ -61,15 +59,9 @@ fun_arg()
             fi
         done
     done
-
     echo "the highest digit is: ${b[0]}"
-
-
 }
-
-
 
 echo "enter a number"
 read a
-
 fun_arg "$a"
