@@ -13,18 +13,18 @@
 # done
 
 #sorted the array in decending order
-# for ((i=0;i<$a;i++))
-# do
-#     for ((j=i+1;j<$a;j++))
-#     do
-#         if ((${b[$i]}<${b[$j]}))
-#         then
-#             temp=${b[$i]}
-#             b[$i]=${b[$j]}
-#             b[$j]=$temp
-#         fi
-#     done
-# done
+for ((i=0;i<$a;i++))
+do
+    for ((j=i+1;j<$a;j++))
+    do
+        if ((${b[$i]}<${b[$j]}))
+        then
+            temp=${b[$i]}
+            b[$i]=${b[$j]}
+            b[$j]=$temp
+        fi
+    done
+done
 
 #summed the 2nd and 3rd element of the array
 # sum=$(( ${b[1]} + ${b[2]} ))
